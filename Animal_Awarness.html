@@ -54,12 +54,22 @@
                background-color: rgb(255, 0, 179);
                color: rgb(0, 255, 13);
            }
+           .column {
+               float: left;
+               width: 33.33%;
+               padding: auto;
+           }
+           .row::after {
+               content: "";
+               clear: both;
+               display: table;
+           }
        </style>
     </head>
     <body>
         <div class="topbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
+            <a href="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\Animal Awarness.html">Home</a>
+            <a href="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\About.html">About</a>
         </div>
         <div class="header">
             <h1>
@@ -74,9 +84,26 @@
         </div>
         <div class="Main">
             <h1 style="font-family: cursive; text-align: center;">Our World...Our Animals</h1>
-            <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\elephant.jpg" alt="Deer">
-            <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\lion.jfif" alt="Deer">
-            <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\Leopard.jfif" alt="Deer">
+            <div class="row">
+                <div class="column">
+                    <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\elephant.jpg" alt="Elephant">
+                </div>
+                <div class="column">
+                    <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\lion.jfif" alt="lion">
+                </div>
+                <div class="column">
+                    <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\Leopard.jfif" alt="Leopard">
+                </div>
+                <div class="column" style="margin-top: 10px;">
+                    <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\ZEBRA.jpg" alt="Zebra">
+                </div>
+                <div class="column" style="margin-top: -300px;" >
+                    <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\GIRAFFE.jpg" alt="Giraffe">
+                </div>
+                <div class="column" style="margin-top:-300px;;">
+                    <img src="C:\Users\Mini81\Desktop\RAJEEV\RAJEEV_ARTS\SOFTWARES\WEBSITES\BUFFALO.jfif" alt="Buffalo">
+                </div>
+            </div>
         </div>
     </body>
 </html>
